@@ -3,7 +3,7 @@ body {
 }
 
 .cabecera {
-    width: 550px;
+    width: 600px;
     text-align: center;
     background-image: url(./Assets/descarga.jpg);
     background-color: lightpink;
@@ -17,7 +17,7 @@ body {
 .titulo-principal {
     font-family: Apple Chancery, cursive;
     color: deeppink;
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.582);
     padding: 15px;
     margin: 15px 20px;
 }
@@ -32,8 +32,34 @@ body {
 }
 
 .info {
-   
+   width: 400px;
+   height: 320px;
+   float: left;
+   padding: 0px 50px 0px 50px;
+   border-style: dotted;
+   border-color: hotpink;
+   margin: 30px 100px;
 }
+
+.titulo-info {
+    text-decoration: underline wavy hotpink;
+}
+
+.cita {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+}
+
+.contacto {
+    width: 600px;
+}
+
 .logo {
     height: 30px;
 }
