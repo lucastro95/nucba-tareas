@@ -10,12 +10,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 6px;
     padding: 10px;
     float: left;
 }
 
 .titulo-principal {
-    font-family: Apple Chancery, cursive;
+    font-family: "Ephesis", Arial;
+    font-size: 40px;
     color: deeppink;
     background-color: rgba(255, 255, 255, 0.582);
     padding: 15px;
@@ -33,9 +35,9 @@ body {
 
 .info {
    width: 400px;
-   height: 320px;
+   height: 300px;
    float: left;
-   padding: 0px 50px 0px 50px;
+   padding: 35px 50px 0px 50px;
    border-style: dotted;
    border-color: hotpink;
    margin: 30px 100px;
@@ -47,38 +49,47 @@ body {
 }
 
 .div-cita {
-    width: 300px;
+    width: 320px;
     height: 50px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 70px;
+    padding: 0px 70px 30px 70px;
     clear: left;
     background-color: white;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Ephesis", Arial;
+    font-size: 27px;
     border: hotpink 3px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
 }
 
 .formulario {
     background-color: rgba(255, 255, 255, 0.692);
-    width: 600px;
+    width: 320px;
     padding: 10px 0px 30px 50px;
-    margin: 30px 0px 30px 50px;
+    margin: 30px 0px 30px 200px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline wavy hotpink;
+    float: left;
 }
 
 .campos {
     width: 250px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.692);
     border-radius: 4px;
     border: hotpink 2px solid;
     font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
 }
 
 .formulario .boton {
@@ -88,19 +99,34 @@ body {
     border: none;
     border-radius: 4px;
     padding: 12px;
-    margin-left: 180px;
+    margin-left: 60px;
     margin-top: 20px;
+}
+
+.formulario .textarea {
+    height: 100px;
+    width: 250px;
 }
 
 .contacto {
     width: 600px;
+    float: right;
+    margin-top: 350px;
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
+.contacto h2 {
+    text-decoration: underline wavy hotpink;
+}
+
+.contacto .logo {
     height: 30px;
 }
 
-#textarea {
-    height: 100px;
-    width: 250px;
+.pista-audio {
+    float: right;
+    margin-right: 390px;
+    margin-top: 30px;
+
 }

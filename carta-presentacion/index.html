@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap">
     <title>Lucía Castro</title>
 </head>
 <body> 
@@ -31,20 +32,20 @@
 <div class="formulario">
     <h3>Formulario de Contacto</h3>
     <form>
-        <label for="Nombre y Apellido">Nombre y Apellido*:
+        <label for="Nombre y Apellido" class="label-campos">Nombre y Apellido*:
             <input type="text" name="Nombre y Apellido" placeholder="Carlos Gonzales" class="campos" required>
         </label>
         <br>
-        <label for="Email">Email*:
+        <label for="Email" class="label-campos">Email*:
             <input type="Email" name="Email" placeholder="ejemplo@email.com" class="campos" required>
         </label>
         <br>
-        <label for="Telefono">Telefono:
+        <label for="Telefono" class="label-campos">Telefono:
             <input type="number" name="Telefono" placeholder="(123) 456789" class="campos">
         </label>
         <br>
-        <label for="Motivo">Motivo de consulta*:
-            <input id="textarea" type="textarea" name="Motivo" placeholder="Ingrese su motivo de consulta aqui..." class="campos" required>
+        <label for="Motivo" class="label-campos">Motivo de consulta*:
+            <input id="textarea" type="textarea" name="Motivo" placeholder="Ingrese su motivo de consulta aqui..." class="campos textarea" required>
         </label>
         <br>
         <input type="submit" value="Enviar" class="boton">
@@ -59,7 +60,7 @@
     <img src="./Assets/github-logo.png" alt="Logo de Github" class="logo">
     <a href="https://github.com/lucastro95" target="blank">lucastro95</a>
 </div>
-<div>
+<div class="pista-audio">
     <audio controls autoplay loop>
         <source src="./Assets/Follow the red Fox.mp3" type="audio/wav">
         Your browser does not support the audio tag.
