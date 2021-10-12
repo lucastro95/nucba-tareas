@@ -1,0 +1,93 @@
+body {
+    background-color: blueviolet;
+}
+
+.popup-01 {
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 380px;
+    height: 280px;
+    padding: 30px 30px 70px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.popup-01 .boton-cierre {
+    margin-top: 0%;
+    display: flex;
+    justify-content: end;
+    border: none;
+    background-color: white;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.popup-01 .boton-aceptar {
+    padding: 15px;
+    width: 170px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ED6755;
+    box-shadow: 0px 4px 10px #ED6755;
+    color: white;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+
+.popup-01 .texto01 {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 20px;
+
+}
+
+.popup-02 {
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 380px;
+    height: 280px;
+    padding: 30px 30px 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.popup-02 .boton-cierre {
+    margin-top: 0%;
+    display: flex;
+    justify-content: end;
+    border: none;
+    background-color: white;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.popup-02 .boton-aceptar {
+    padding: 15px;
+    width: 170px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2C3E50;
+    color: white;
+    box-shadow: 0px 4px 10px #2C3E50;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+
+.popup-02 .texto02 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
