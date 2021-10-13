@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form>
+        <label for="nombre">Nombre:
+            <input type="text" id="nombre">
+        </label>
+        <br>
+        <br>
+        <label for="apellido">Apellido:
+            <input type="text" id="nombre">
+        </label>
+        <br>
+        <br>
+        <label for="sexo">Sexo:
+            <input type="radio" name="sexo" id="sexo">hombre
+            <input type="radio" name="sexo" id="sexo">mujer
+        </label>
+        <br>
+        <br>
+        <label for="email">Correo:
+            <input type="email" name="email" id="email">
+        </label>
+        <br>
+        <br>
+        <label for="poblacion">Población:
+            <select name="poblacion" id="poblacion">
+                <option value="bsas">Buenos Aires</option>
+                <option value="bsas">Córdoba</option>
+                <option value="bsas">Santa Fe</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label for="descripcion">Descripción:
+            <input type="textarea" name="descripcion" id="descripcion">
+        </label>
+        <br>
+        <br>
+        <input type="checkbox" name="novedades" id="novedades">Deseo recibir información sobre novedades y ofertas
+        <br>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
