@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    background-color: #c4deda;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar .logo img {
+    height: 40px;
+}
+
+.navBar .menu ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .menu a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.navBar .menu a:hover {
+    border-bottom: 3px solid white;
+}
+
+.navBar .menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.navBar .menu .carrito {
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
