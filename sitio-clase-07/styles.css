@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navBar {
+    width: 100%;
+    height: auto;
+    padding: 0.5em 0em;
+    background-color: #A2D2FF;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .logo img {
+    height: 3.2em;
+    padding-right: 1em;
+}
+.navBar .logo h1 {
+    color: #fafafa;
+    font-family: 'Pacifico', cursive;
+    font-weight: 50;
+    font-size: 2em;
+}
+
+.navBar .menu a {
+    text-decoration: none;
+    color: #fafafa;
+    padding: 0.2em;
+}
+
+.navBar .menu a:hover {
+    border-bottom: #FEE440 solid 0.3em;
+}
+
+.navBar .menu ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.navBar .menu li {
+    padding: 0.5em 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    color: #fafafa;
+    text-align: center;
+}
+
+.portada {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-top: 4em;
+    background-color: #A2D2FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23FEE440' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+}
+
+.portada .imagen img {
+    width: 100%;
+}
+
+.portada .titulo h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    text-align: center;
+    color: #FF865E;
+    padding: 0.5em;
+    text-shadow: 2px 2px #fafafa;
+}
+
+.galeria {
+    background-color: #FF865E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.galeria .foto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.galeria .foto img {
+    width: 85%;
+    box-shadow: -3px 3px 5px 2px #963f23;
+}
+
+.galeria .foto p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fafafa;
+    text-align: center;
+    margin: 1em;
+}
+
+.pie-pagina {
+    background: #FEE440;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 2em 0em;
+}
+
+.pie-pagina h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: #FF865E;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+
+.pie-pagina .visitanos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0.5em 0.5em;
+}
+
+.pie-pagina .visitanos img {
+    width: 85%;
+    margin: 0.5em;
+}
+
+.pie-pagina .contacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1em 0.5em;
+}
+
+.pie-pagina .contacto a {
+    width: 60%;
+    background-color: #A2D2FF;
+    border-radius: 10px;
+    box-shadow: -3px 3px 5px 2px #5c7790;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #fafafa;
+}
+
+.pie-pagina .contacto a:hover {
+    box-shadow: -3px 3px 5px 2px #fafafa;
+}
+
+.pie-pagina .redes {
+    height: 12em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.pie-pagina .redes a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #fafafa;
+    margin: 0.7em;
+}
+
+.pie-pagina .redes a:hover {
+    text-decoration: underline;
+}
+
+.pie-pagina .redes .logos-texto {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .redes img {
+    width: 2em;
+}
+
+
+@media only screen and (min-width:768px) {
+    .navBar {
+    height: 6em;
+    padding: 0.5em 2.5em;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .navBar .logo {
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .navBar .menu ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .portada {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portada .imagen img {
+        width: 30em;
+    }
+
+    .portada .titulo {
+    width: 50%;
+    }
+
+    .galeria {
+        flex-flow: row;
+    }
+
+    .galeria .foto{
+        width: 33.33%;
+    }
+
+    .pie-pagina {
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .pie-pagina .seccion {
+        width: 33.33%;
+    }
+}
