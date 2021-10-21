@@ -68,9 +68,12 @@
     padding: 0em 0em 1em 0em;
 }
 
+.acerca-de .video {
+    width: 100%;
+}
+
 .acerca-de .video video {
     width: 100%;
-
 }
 
 .acerca-de .texto {
