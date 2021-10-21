@@ -59,63 +59,43 @@
 
 /* *************************************** */
 
-.portada {
-    width: 100%;
-    height: calc(100vh - 16em);
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+.acerca-de {
     background-color: #A2D2FF;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23FEE440' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0em 0em 1em 0em;
 }
 
-.portada .imagen img {
-    display: none;
+.acerca-de .video video {
+    width: 100%;
+
 }
 
-.portada .titulo h3 {
+.acerca-de .texto {
+    width: 90%;
+    margin: 1.5em 0em;
+}
+
+.acerca-de .texto h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 4em;
-    text-align: center;
+    font-weight: 50;
+    font-size: 2em;
     color: #FF865E;
-    padding: 0.5em;
     text-shadow: 2px 2px #fafafa;
 }
 
-/* *************************************** */
-
-.galeria {
-    background-color: #FF865E;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.galeria .foto {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 2em;
-}
-
-.galeria .foto img {
-    width: 85%;
-    box-shadow: -3px 3px 5px 2px #963f23;
-}
-
-.galeria .foto p {
+.acerca-de .texto p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fafafa;
-    text-align: center;
-    margin: 1em;
-}
+    margin-top: 1em;
 
+}
 /* *************************************** */
 
 .pie-pagina {
-    height: 100vh;
     background: #FEE440;
+    height: 100vh;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -220,29 +200,15 @@
         flex-flow: row;
     }
 
-    .portada {
-        height: calc(100vh - 6em);
+    .acerca-de .video {
         width: 100%;
-        flex-flow: row;
-        justify-content: space-between;
+        height: calc(100vh - 8em);
+        max-height: 400px;
+        overflow: hidden;
     }
 
-    .portada .imagen img {
-        height: 33em;
-        display: block;
-    }
-
-    .portada .titulo {
-    width: 50%;
-    margin-right: 10em;
-    }
-
-    .galeria {
-        flex-flow: row;
-    }
-
-    .galeria .foto{
-        width: 33.33%;
+    .acerca-de .texto {
+        width: 75%;
     }
 
     .pie-pagina {
