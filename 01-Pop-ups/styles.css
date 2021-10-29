@@ -1,93 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: blueviolet;
 }
 
-.popup-01 {
-    background-color: #FFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 380px;
-    height: 280px;
-    padding: 30px 30px 70px 30px;
-    border-radius: 20px;
-    text-align: center;
+.pop-up {
+    position: relative;
+    width: 432px;
+    height: 399px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.popup-01 .boton-cierre {
-    margin-top: 0%;
-    display: flex;
-    justify-content: end;
-    border: none;
-    background-color: white;
-    color: gray;
+.pop-up .boton-cierre {
+    position: absolute;
+    right: 15px;
+    top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-}
-
-.popup-01 .boton-aceptar {
-    padding: 15px;
-    width: 170px;
+    color: rgb(179, 179, 179);
     border: none;
-    border-radius: 4px;
-    background-color: #ED6755;
-    box-shadow: 0px 4px 10px #ED6755;
-    color: white;
-    font-family: Helvetica;
-    font-size: 15px;
+    background: none; 
 }
 
-.popup-01 .texto01 {
-    width: 380px;
-    display: flex;
-    justify-content: center;
-    font-family: Helvetica;
-    font-size: 20px;
-
+.pop-up img {
+    margin-bottom: 20px;
 }
 
-.popup-02 {
-    background-color: #FFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 380px;
-    height: 280px;
-    padding: 30px 30px 50px 30px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.popup-02 .boton-cierre {
-    margin-top: 0%;
-    display: flex;
-    justify-content: end;
-    border: none;
-    background-color: white;
-    color: gray;
+.pop-up .texto01 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    text-align: center;
+    margin: 15px 10px
 }
 
-.popup-02 .boton-aceptar {
-    padding: 15px;
-    width: 170px;
+.pop-up .texto02 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 15px 85px 25px 85px;
+}
+
+.pop-up .boton-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 10px;
+    padding: 15px 35px;
     border: none;
-    border-radius: 4px;
-    background-color: #2C3E50;
-    color: white;
-    box-shadow: 0px 4px 10px #2C3E50;
-    font-family: Helvetica;
-    font-size: 15px;
+    border-radius: 5px;
+    background: #ED6755;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 10px 1px #ED6755;
 }
 
-.popup-02 .texto02 {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    font-family: Helvetica;
-    font-size: 20px;
-    margin-bottom: 50px;
+.pop-up .boton-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 10px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    background: #2C3E50;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 10px 1px #2C3E50;
 }

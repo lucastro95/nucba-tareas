@@ -5,22 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Inside Velas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c4bceee1c.js" crossorigin="anonymous"></script>
+    <title>Vivero Eden</title>
 </head>
 <body>
-    <nav class="navBar">
-        <div class="logo">
-            <img src="./assets/logo sin fondo.png" alt="Logo de Inside Velas">
-        </div>
+    <header>
 
-        <div class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
+        <nav class="navBar">
+            <div>
+                <img class="logo" src="./assets/logo.png" alt="Logo de Vivero Eden">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="boton-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu-bar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Contacto</a></li>
-                <a href="#"><img src="./assets/107831.png" alt="Carrito de compras" class="carrito"></a>
             </ul>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-texto">
+                <h1>Plantas para tu hogar</h1>
+                <p>Vivero Eden es una empresa familiar dedicada a la producción de una diversa variedad de árboles, arbustos, frutales, herbáceas, gramíneas y palmeras. Manejado por sus dueños hace más de 50 años, estamos comprometidos a brindarte la mejor claidad y servicio.</p>
+                <div class="banner-botones">
+                    <a href="#" class="boton">Conoce más</a>
+                    <a href="#" class="boton">Nuestros productos</a>
+                </div>
+            </div>
+            <div class="banner-imagen">
+                <img src="./assets/plantas.jpg" alt="Gente trabajando en vivero">
+            </div>
+            <div>
+
+            </div>
         </div>
-    </nav>
+    </header>
 </body>
 </html>

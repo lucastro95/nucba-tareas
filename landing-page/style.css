@@ -2,55 +2,196 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.navBar{
-    height: 50px;
-    width: 95%;
-    margin: auto;
-    margin-top: 50px;
-    padding: 10px 50px;
-    border-radius: 3px;
-    background-color: #c4deda;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navBar .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navBar .logo img {
-    height: 40px;
-}
-
-.navBar .menu ul {
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navBar .menu a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    color: white;
+    list-style: none;
 }
 
-.navBar .menu a:hover {
-    border-bottom: 3px solid white;
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
-.navBar .menu li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 5px 15px;
+header {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url(./assets/fondo-header.jpg);
+    background-color: #010D00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.navBar .menu .carrito {
-    height: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.navBar .boton-menu {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navBar .menu-bar {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #010D00;
+    opacity: 0.9;
+    text-align: center;
+    transition: all .5s;
+}
+
+.navBar .menu-bar li {
+    display: none;
+    line-height: 30px;
+    margin: 60px 0px;
+    transition: all .5s;
+}
+
+.navBar .menu-bar li a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navBar .menu-bar li a.active, .navBar .menu-bar li a:hover{
+    color: #72BF4E;
+    text-shadow: 0px 0px 5px #fff;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu-bar{
+    height: 100vh;
+}
+
+#check:checked ~ .menu-bar li {
+    display: block;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column;
+}
+
+.banner .banner-texto {
+    color: #fff;
+    text-align: center;
+}
+
+.banner .banner-texto h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    padding: 0px 25px;
+}
+
+.banner .banner-texto p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding: 0px 25px;
+}
+
+.banner .banner-botones .boton {
+    display: flex;
+    flex-flow: column;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin: 25px 10px;
+    background-color: none;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.banner .banner-botones .boton:hover {
+    box-shadow: 0px 0px 10px 3px #fff;
+    transition: .2;
+}
+
+.banner .banner-imagen {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .boton-menu {
+        display: none;
+    }
+
+    .navBar .menu-bar {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .navBar .menu-bar li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0px 20px;
+        transition: none;
+    }
+
+    .navBar .menu-bar li a {
+        font-size: 25px;
+    }
+
+    .banner {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 50px;
+        margin-top: 50px;
+    }
+
+    .banner .banner-texto {
+        width: 60%;
+    }
+
+    .banner .banner-imagen {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .banner .banner-imagen img {
+        width: 100%;
+    }
+
+    .banner .banner-botones {
+        flex-flow: row wrap;
+    }
+
+    .banner .banner-botones .boton {
+        display: inline-block;
+    }
 }
