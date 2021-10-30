@@ -1,3 +1,5 @@
+/* Reset CSS */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +12,8 @@ body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
+/* Header section */
+
 header {
     width: 100%;
     height: auto;
@@ -21,6 +25,7 @@ header {
     background-size: cover;
 }
 
+/* Nav section */
 
 .navBar {
     width: 100%;
@@ -83,6 +88,8 @@ header {
     display: block;
 }
 
+/* Banner section */
+
 .banner {
     display: flex;
     flex-flow: column;
@@ -120,11 +127,191 @@ header {
 .banner .banner-botones .boton:hover {
     box-shadow: 0px 0px 10px 3px #fff;
     transition: .2;
+    cursor: pointer;
 }
 
 .banner .banner-imagen {
     display: none;
 }
+
+/* Product section */
+
+.product_section {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+    background-color: #022601;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_section h2{
+    font-size: 30px;
+    color: #fff;
+}
+
+.product_section img {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.product_container {
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_container p {
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 5px;
+}
+
+.product_container .price {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.726);
+    padding-bottom: 10px;
+}
+
+.product_container button {
+    padding: 10px 20px;
+    
+    color: rgba(255, 255, 255, 0.726);
+
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.product_container button:hover {
+    box-shadow: 0px 0px 10px 3px #fff;
+    transition: .2;
+    cursor: pointer;
+}
+
+/* Banner 2 section */
+
+.banner_2 {
+    width: 100%;
+    height: 400px;
+
+    background-color: #02590F;
+
+    overflow: hidden;
+}
+
+.banner_2 img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.8;
+}
+
+/* Contact section */
+
+.contact_section {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+
+    background: #022601;
+
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_section .contact_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_text_container h2 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact_text_container .contact_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_text_container .contact_component {
+    margin: 15px 0;
+    color: rgba(255, 255, 255, 0.726);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_text_container .contact_component i {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact_section .map_container {
+    margin: 15px;
+}
+
+.contact_section .map_container iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #022601;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.footer_logo img{
+    width: 70px;
+}
+
+.footer_logo h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer_social  i{
+    font-size: 25px;
+    color: #fff;
+
+    margin: 0px 15px;
+}
+
 
 @media screen and (min-width:768px) {
     
@@ -132,6 +319,8 @@ header {
         height: auto;
         min-height: 100vh;
     }
+
+    /* Nav section */
 
     .logo {
         margin-left: 50px;
@@ -166,6 +355,8 @@ header {
         font-size: 25px;
     }
 
+    /* Banner section */
+
     .banner {
         flex-flow: row;
         justify-content: space-between;
@@ -194,4 +385,83 @@ header {
     .banner .banner-botones .boton {
         display: inline-block;
     }
+
+    /* Product section */
+
+    .product_container .text_container h2{
+        margin: 50px;
+
+        font-size: 40px;
+    }
+
+    .product_component {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .product_container {
+        width: 30%;
+    }
+
+    .product_container img {
+        width: 60%;
+    }
+
+    .product_container img:hover {
+        width: 80%;
+        cursor: zoom-in;
+        transition: width 0.5s;
+    }
+    
+    /* Contact section */
+
+        
+    .contact_section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact_section .contact_text_container {
+        width: 30%;
+        justify-content: right;
+
+    }
+
+    .contact_text_container h2 {
+        font-size: 35px;
+        text-align: right;
+    }
+
+    .contact_text_container .contact_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .contact_text_container .contact_component {
+        margin: 15px 0;
+        color: rgba(255, 255, 255, 0.726);
+
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+    }
+
+    .contact_text_container .contact_component i {
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    .contact_section .map_container {
+        width: 40%;
+        margin: 15px;
+    }
+
+    .contact_section .map_container iframe {
+        height: 300px;
+        width: 100%px;
+    }
+
 }
