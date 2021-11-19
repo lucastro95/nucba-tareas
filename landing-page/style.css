@@ -423,35 +423,26 @@ footer {
     }
 
     .contact_section .contact_text_container {
-        width: 30%;
-        justify-content: right;
-
+        width: 40%;
+        align-items: center;
     }
 
     .contact_text_container h2 {
         font-size: 35px;
-        text-align: right;
     }
 
     .contact_text_container .contact_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: right;
+        align-items: flex-start;
+        padding-left: 40px;
     }
 
     .contact_text_container .contact_component {
-        margin: 15px 0;
-        color: rgba(255, 255, 255, 0.726);
-
-        display: flex;
-        flex-direction: column;
-        align-items: right;
+        flex-direction: row;
+        align-items: center;
     }
 
     .contact_text_container .contact_component i {
-        margin: 10px 0;
-        color: #fff;
+        padding: 10px;
     }
 
     .contact_section .map_container {
