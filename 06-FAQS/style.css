@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --dark-grayish-blue: hsl(237, 12%, 33%);
+    --grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --white: #FFFFFF;
+    --black: #000;
+}
+
+body {
+    background-color: var(--soft-violet);
+}
+
+.principal_card {
+    width: 330px;
+    height: 550px;
+    margin: auto;
+    margin-top: 150px;
+
+    background-color: var(--white);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_mobile {
+    height: 120px;
+
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image_mobile img {
+    margin: -105px 30px 0 0;
+}
+
+.text_component {
+    width: 100%;
+    padding: 25px;
+    font-size: 12px;
+}
+
+a {
+    width: 100%;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover > h3{
+    font-weight: 700;
+}
+
+.text_component h1 {
+    margin-bottom: 20px;
+
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text_component h3 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+.answer {
+    margin: 10px 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 2s;
+}
+
+.answer::before {
+    content: "";
+    
+}
+
+hr {
+    height: 1px;
+    background-color: var(--light-grayish-blue);
+    border: none;
+}
+
+.accordion_link img {
+    transition: transform .5s;
+}
+
+.accordion_item:target .answer {
+    max-height: 150px;
+}
+
+.accordion_item:target .accordion_link h3{
+    font-weight: 700;
+}
+
+.accordion_item:target .accordion_link img{
+    transform: rotate(180deg);
+}
+
+
+
+
+/* Attributions */
+    .attribution { 
+        margin-top: 20px;
+        font-size: 11px;
+        text-align: center; 
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
